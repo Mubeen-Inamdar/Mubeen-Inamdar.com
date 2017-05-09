@@ -5,25 +5,35 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>@yield('title') | Mubeen-Inamdar.com</title>
         <meta name="description" content="Portfolio and information about Mubeen Inamdar.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         {{-- Favicons --}}
 
+        {{-- Fonts --}}
+        <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+
         {{-- Stylesheets --}}
         <link rel="stylesheet" href="/css/app.css">
+
+        {{-- CSRF Token --}}
+        @include('layouts.partials.csrf-token')
     </head>
     <body>
-        <!--[if lte IE 9]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
+        {{-- Update Browser Message --}}
+        @include('layouts.partials.update-browser')
 
         {{-- Content --}}
-        @yield('content')
-
-        {{-- Scripts --}}
-        <script src="/js/app.js"></script>
+        <div id="app">
+            @include('layouts.partials.nav')
+            @yield('content')
+        </div>
 
         {{-- Google Analytics --}}
         @include('layouts.partials.analytics')
+
+        {{-- Scripts --}}
+        <script src="/js/app.js"></script>
+        <script src="/js/materialize.js"></script>
+        @yield('js')
     </body>
 </html>
