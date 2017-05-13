@@ -15,8 +15,14 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example', require('./components/Example.vue'));
+Vue.component('scroll-to-top', require('./components/ScrollToTop.vue'));
 
 const app = new Vue({
     el: '#app'
 });
+
+/**
+ * Initialise any scripts.
+ */
+
+require('./init');

@@ -6,162 +6,86 @@
     <div id="index-banner" class="parallax-container">
         <div class="section no-pad-bot">
             <div class="container">
-                <br><br>
-                <h1 class="header center light-blue-text text-lighten-2">Mubeen Inamdar</h1>
+
+                <h1 class="header center deep-orange-text">Mubeen Inamdar</h1>
                 <div class="row center">
                     <h5 class="header col s12 light">Web development in Leeds.</h5>
                 </div>
+
                 <div class="row center">
-                    <a href="http://materializecss.com/getting-started.html"
-                       id="download-button"
-                       class="btn-large waves-effect waves-light light-blue lighten-1"
-                    >Get In Touch</a>
+                    <a href="#" class="btn-large waves-effect waves-light deep-orange lighten-1">Get In Touch</a>
                 </div>
-                <br><br>
 
             </div>
         </div>
-        <div class="parallax"><img src="/img/banners/banner_03.jpg" alt="Unsplashed background img 1"></div>
-    </div>
-
-    <div class="container">
-        <div class="section">
-
-            <!--   Icon Section   -->
-            <div class="row">
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center blue-grey-text"><i class="material-icons">flash_on</i></h2>
-                        <h5 class="center">Speeds up development</h5>
-
-                        <p class="light">We did most of the heavy lifting for you to provide a default stylings that
-                            incorporate our custom components. Additionally, we refined animations and transitions to
-                            provide a smoother experience for developers.</p>
-                    </div>
-                </div>
-
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center blue-grey-text"><i class="material-icons">group</i></h2>
-                        <h5 class="center">User Experience Focused</h5>
-
-                        <p class="light">By utilizing elements and principles of Material Design, we were able to create
-                            a framework that incorporates components and animations that provide more feedback to users.
-                            Additionally, a single underlying responsive system across all platforms allow for a more
-                            unified user experience.</p>
-                    </div>
-                </div>
-
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center blue-grey-text"><i class="material-icons">settings</i></h2>
-                        <h5 class="center">Easy to work with</h5>
-
-                        <p class="light">We have provided detailed documentation as well as specific code examples to
-                            help new users get started. We are also always open to feedback and can answer any questions
-                            a user may have about Materialize.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-    <div class="parallax-container valign-wrapper">
-        <div class="section no-pad-bot">
-            <div class="container">
-                <div class="row center">
-                    <h5 class="header col s12 light">A modern responsive front-end framework based on Material
-                        Design</h5>
-                </div>
-            </div>
-        </div>
-        <div class="parallax"><img src="/img/banners/banner_01.jpg" alt="Unsplashed background img 2"></div>
+        <div class="parallax"><img src="/img/banners/banner_03.jpg" alt="Banner"></div>
     </div>
 
     <div class="container">
         <div class="section">
 
             <div class="row">
-                <div class="col s12 center">
-                    <h3><i class="mdi-content-send blue-grey-text"></i></h3>
-                    <h4>Contact Us</h4>
-                    <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                        scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna
-                        fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra
-                        ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam
-                        eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi
-                        massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non
-                        tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                        Curae;</p>
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center blue-grey-text"><i class="fa fa-code" aria-hidden="true"></i></h2>
+                        <h5 class="center">Web Development</h5>
+                        <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center blue-grey-text"><i class="fa fa-database" aria-hidden="true"></i></h2>
+                        <h5 class="center">Database Design</h5>
+                        <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center blue-grey-text"><i class="fa fa-terminal" aria-hidden="true"></i></h2>
+                        <h5 class="center">System Administration</h5>
+                        <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+                    </div>
                 </div>
             </div>
 
         </div>
     </div>
 
+    @component('layouts.components.parallax-row', ['imageSrc' => '/img/banners/banner_01.jpg'])
+        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+    @endcomponent
 
-    <div class="parallax-container valign-wrapper">
-        <div class="section no-pad-bot">
-            <div class="container">
-                <div class="row center">
-                    <h5 class="header col s12 light">A modern responsive front-end framework based on Material
-                        Design</h5>
-                </div>
-            </div>
-        </div>
-        <div class="parallax"><img src="/img/banners/banner_02.jpg" alt="Unsplashed background img 3"></div>
-    </div>
+    @component('layouts.components.text-row', ['title' => 'A Bit About Me'])
+        <p class="left-align light">Not only do I work full time as a PHP developer for an executive recruitment company, but in my spare time, I develop my skills further with both personal, and freelance projects. </p>
+        <p class="left-align light">In my full time employment, I work on the internal PHP based system, where I take a pro-active role in creating new features, regular code refactoring, fixing bugs, and tuning algorithms to ensure, and improve, high performance at all times. It is of the utmost importance that the PHP based system, is constantly developed to keep in sync with ever changing new technologies, not only for obvious security reasons, but also to maintain state of the art services, which attracts high paying cliental. </p>
+        <p class="left-align light">From a mere idea, to a fully functioning product, as a full stack developer my skills enable me to take the ideas from the drawing board, and progress them into a finished, high-spec product.   </p>
+        <p class="left-align light">I pride myself with always writing clean and expressive code, I do this by following concepts such as: OOP, The Gang of Four design patterns and MVC. Most of my work is done in the Laravel framework, however, I also write non-framework based code.</p>
+        <p class="left-align light">Databases, the heart of every company’s operations, are commodities which I myself have single-handedly designed, keeping in mind the relationships between data, scalability, data integrity and also flexibility, which allows the client to make changes to the original design. </p>
+        <p class="left-align light">I’m fully accustomed to using Git for source control to track, both mine and my teams, changes to the system. In regards to the sysadmin side, I have experience with both Apache and NGINX web servers running on a Linux distro (both CentOS and Debian). I have crafted configuration files and feel very comfortable within the CLI. I also have a fair amount of experience with JavaScript along with the jQuery library and more recently the Vue.js framework.</p>
+        <p class="left-align light">Although my domain and main area of interest is not concerned with the front-end, I have, in spite of this, created all the front-ends for my projects, most of which utilise the Bootstrap framework while bespoke styling has been implemented through a pre-compile such as SASS. By doing this, I have gained intermediate graphic skills, such as creating vector graphics, and image editing, these skills which I continue to develop on a daily basis. </p>
+        <p class="left-align light">Although my role as a PHP developer has massively developed me in the I.T world, I feel confident in saying that the majority of my knowledge, has been gained from countless hours put into books, blogs, forums and videos. </p>
+        <p class="left-align light">I am a self-taught developer with an unstoppable drive, nothing will hold me back, and I continuously strive to push my boundaries, in order to excel myself in both my domain and my personal abilities.</p>
+    @endcomponent
 
-    <footer class="page-footer light-blue">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Company Bio</h5>
-                    <p class="grey-text text-lighten-4">We are a team of college students working on this project like
-                        it's our full time job. Any amount would help support and continue development on this project
-                        and is greatly appreciated.</p>
+    @component('layouts.components.parallax-row', ['imageSrc' => '/img/banners/banner_01.jpg'])
+        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+    @endcomponent
 
+    @component('layouts.components.text-row', ['title' => 'Portfolio & Case Studies'])
+        <p class="left-align light">Lorem ipsum...</p>
+    @endcomponent
 
-                </div>
-                <div class="col l3 s12">
-                    <h5 class="white-text">Settings</h5>
-                    <ul>
-                        <li><a class="white-text" href="#!">Link 1</a></li>
-                        <li><a class="white-text" href="#!">Link 2</a></li>
-                        <li><a class="white-text" href="#!">Link 3</a></li>
-                        <li><a class="white-text" href="#!">Link 4</a></li>
-                    </ul>
-                </div>
-                <div class="col l3 s12">
-                    <h5 class="white-text">Connect</h5>
-                    <ul>
-                        <li><a class="white-text" href="#!">Link 1</a></li>
-                        <li><a class="white-text" href="#!">Link 2</a></li>
-                        <li><a class="white-text" href="#!">Link 3</a></li>
-                        <li><a class="white-text" href="#!">Link 4</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container">
-                Made by <a class="blue-grey-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-            </div>
-        </div>
-    </footer>
-@endsection
+    @component('layouts.components.parallax-row', ['imageSrc' => '/img/banners/banner_02.jpg'])
+        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+    @endcomponent
 
-@section('js')
-    <script>
-        (function ($) {
-            $(function () {
+    @component('layouts.components.text-row', ['title' => 'Blog'])
+        <p class="left-align light">Lorem ipsum...</p>
+    @endcomponent
 
-                $('.button-collapse').sideNav();
-                $('.parallax').parallax();
-
-            });
-        })(jQuery);
-    </script>
+    @component('layouts.components.parallax-row', ['imageSrc' => '/img/banners/banner_02.jpg'])
+        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+    @endcomponent
 @endsection

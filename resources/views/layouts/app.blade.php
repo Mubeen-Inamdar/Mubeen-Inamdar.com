@@ -3,11 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>@yield('title') | Mubeen-Inamdar.com</title>
+        <title>@yield('title') | {{ config('app.name') }}</title>
         <meta name="description" content="Portfolio and information about Mubeen Inamdar.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         {{-- Favicons --}}
+        @include('layouts.partials.favicons')
 
         {{-- Fonts --}}
         <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
@@ -26,6 +27,10 @@
         <div id="app">
             @include('layouts.partials.nav')
             @yield('content')
+            @include('layouts.partials.footer')
+
+            {{-- Scroll to Top --}}
+            <scroll-to-top></scroll-to-top>
         </div>
 
         {{-- Google Analytics --}}
@@ -34,6 +39,5 @@
         {{-- Scripts --}}
         <script src="/js/app.js"></script>
         <script src="/js/materialize.js"></script>
-        @yield('js')
     </body>
 </html>
