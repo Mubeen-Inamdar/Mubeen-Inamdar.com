@@ -31,22 +31,20 @@
             </div>
 
             <div class="col l3 s12">
-                <h5 class="white-text">Settings</h5>
+                <h5><a class="white-text" href="{{ config('url.blog') }}">Blog</a></h5>
                 <ul>
-                    <li><a class="white-text" href="#!">Link 1</a></li>
-                    <li><a class="white-text" href="#!">Link 2</a></li>
-                    <li><a class="white-text" href="#!">Link 3</a></li>
-                    <li><a class="white-text" href="#!">Link 4</a></li>
+                    @foreach($blogPosts as $blogPost)
+                        <li class="blog-post">
+                            <a class="white-text" href="{{ $blogPost->link }}">{{ $blogPost->title->rendered }}</a>
+                        </li>
+                    @endforeach
                 </ul>
             </div>
             <div class="col l3 s12">
-                <h5 class="white-text">Connect</h5>
-                <ul>
-                    <li><a class="white-text" href="#!">Link 1</a></li>
-                    <li><a class="white-text" href="#!">Link 2</a></li>
-                    <li><a class="white-text" href="#!">Link 3</a></li>
-                    <li><a class="white-text" href="#!">Link 4</a></li>
-                </ul>
+                <h5 class="white-text">Find Me Elsewhere</h5>
+                <a class="btn-floating btn-large waves-effect waves-light icon-github" href="{{ config('url.github') }}" target="_blank"><i class="fa fa-github left" aria-hidden="true"></i></a>
+                <a class="btn-floating btn-large waves-effect waves-light icon-stack-overflow" href="{{ config('url.stack-overflow') }}" target="_blank"><i class="fa fa-stack-overflow left" aria-hidden="true"></i></a>
+                <a class="btn-floating btn-large waves-effect waves-light icon-twitter" href="{{ config('url.twitter') }}" target="_blank"><i class="fa fa-twitter left" aria-hidden="true"></i></a>
             </div>
 
         </div>

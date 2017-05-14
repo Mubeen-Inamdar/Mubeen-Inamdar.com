@@ -3,6 +3,7 @@
 @import "node_modules/font-awesome/scss/font-awesome";
 
 // Variables
+@import "colors";
 @import "variables";
 
 // MaterializeCSS
@@ -63,4 +64,31 @@ p {
 
 .page-footer {
   margin: 0;
+
+  .icon-twitter,
+  .icon-github,
+  .icon-stack-overflow {
+    margin-right: 10px;
+  }
+
+  .icon-twitter {
+    background-color: $twitter;
+  }
+
+  .icon-github {
+    background-color: $github;
+  }
+
+  .icon-stack-overflow {
+    background-color: $stack-overflow;
+  }
+}
+
+.justify-align {
+  text-align: justify;
+}
+
+.blog-post {
+  margin-bottom: 10px;
+  border-bottom: 1px dotted color("shades", "white");
 }

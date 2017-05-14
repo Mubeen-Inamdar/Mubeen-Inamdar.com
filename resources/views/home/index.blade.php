@@ -29,7 +29,7 @@
                     <div class="icon-block">
                         <h2 class="center blue-grey-text"><i class="fa fa-code" aria-hidden="true"></i></h2>
                         <h5 class="center">Web Development</h5>
-                        <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+                        <p class="light justify-align">I provide bespoke solutions to meet your business requirements. I specialise in making web applications, accessible from anywhere in the world, to aid you and your business in achieving it's ultimate goal.</p>
                     </div>
                 </div>
 
@@ -37,7 +37,7 @@
                     <div class="icon-block">
                         <h2 class="center blue-grey-text"><i class="fa fa-database" aria-hidden="true"></i></h2>
                         <h5 class="center">Database Design</h5>
-                        <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+                        <p class="light justify-align">Focusing on scalability and performance, I will design and implement a database to power you business both efficiently and effectively.</p>
                     </div>
                 </div>
 
@@ -45,7 +45,7 @@
                     <div class="icon-block">
                         <h2 class="center blue-grey-text"><i class="fa fa-terminal" aria-hidden="true"></i></h2>
                         <h5 class="center">System Administration</h5>
-                        <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+                        <p class="light justify-align">Take the stress away from having to provision your own servers. I will provide full server maintenance, from security updates and software installation to domain management.</p>
                     </div>
                 </div>
             </div>
@@ -74,14 +74,6 @@
     @endcomponent
 
     @component('layouts.components.text-row', ['title' => 'Portfolio & Case Studies'])
-        <p class="left-align light">Lorem ipsum...</p>
-    @endcomponent
-
-    @component('layouts.components.parallax-row', ['imageSrc' => '/img/banners/banner_02.jpg'])
-        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-    @endcomponent
-
-    @component('layouts.components.text-row', ['title' => 'Blog'])
         <p class="left-align light">Lorem ipsum...</p>
     @endcomponent
 
