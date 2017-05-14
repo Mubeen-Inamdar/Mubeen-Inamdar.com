@@ -35,7 +35,7 @@ p {
 }
 
 .parallax > img {
-  filter: brightness(.5);
+  filter: brightness(.3);
 }
 
 @media only screen and (max-width: 992px) {
@@ -91,4 +91,8 @@ p {
 .blog-post {
   margin-bottom: 10px;
   border-bottom: 1px dotted color("shades", "white");
+}
+
+#index-banner > .section {
+  margin-top: 70px;
 }

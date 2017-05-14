@@ -24,8 +24,8 @@
                     </div>
                 </div>
                 <div class="row">
-                    <a class="btn-floating btn-large waves-effect waves-light deep-orange">
-                        <i class="material-icons white-text prefix">send</i>
+                    <a class="waves-effect waves-light btn">
+                        <i class="material-icons right">send</i>Send
                     </a>
                 </div>
             </div>

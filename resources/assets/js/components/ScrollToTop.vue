@@ -1,6 +1,6 @@
 <template>
     <a v-on:click="handleButtonClick" class="btn-floating btn-large waves-effect waves-light deep-orange scroll-to-top">
-        <i class="fa fa-angle-up" aria-hidden="true"></i>
+        <i class="material-icons">keyboard_arrow_up</i>
     </a>
 </template>
 
@@ -10,6 +10,11 @@
         bottom: 40px;
         right: 40px;
         display: none;
+        opacity: .5;
+    }
+
+    .scroll-to-top:hover {
+        opacity: 1;
     }
 </style>
 

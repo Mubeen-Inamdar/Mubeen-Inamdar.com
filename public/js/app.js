@@ -1638,6 +1638,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -1691,6 +1696,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
         $('.button-collapse').sideNav();
         $('.parallax').parallax();
+        $('.carousel-slider').carousel({ fullWidth: true, indicators: true });
     });
 })(jQuery);
 
@@ -1699,7 +1705,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(31)();
-exports.push([module.i, "\n.scroll-to-top[data-v-69e3aaaa] {\n    position: fixed;\n    bottom: 40px;\n    right: 40px;\n    display: none;\n}\n", ""]);
+exports.push([module.i, "\n.scroll-to-top[data-v-69e3aaaa] {\n    position: fixed;\n    bottom: 40px;\n    right: 40px;\n    display: none;\n    opacity: .5;\n}\n.scroll-to-top[data-v-69e3aaaa]:hover {\n    opacity: 1;\n}\n", ""]);
 
 /***/ }),
 /* 31 */
@@ -12313,11 +12319,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "click": _vm.handleButtonClick
     }
   }, [_c('i', {
-    staticClass: "fa fa-angle-up",
-    attrs: {
-      "aria-hidden": "true"
-    }
-  })])
+    staticClass: "material-icons"
+  }, [_vm._v("keyboard_arrow_up")])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {

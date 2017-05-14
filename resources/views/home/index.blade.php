@@ -7,13 +7,9 @@
         <div class="section no-pad-bot">
             <div class="container">
 
-                <h1 class="header center deep-orange-text">Mubeen Inamdar</h1>
                 <div class="row center">
+                    <h1 class="header deep-orange-text">Mubeen Inamdar</h1>
                     <h5 class="header col s12 light">Web development in Leeds.</h5>
-                </div>
-
-                <div class="row center">
-                    <a href="#" class="btn-large waves-effect waves-light deep-orange lighten-1">Get In Touch</a>
                 </div>
 
             </div>
@@ -54,10 +50,7 @@
     </div>
 
     @component('layouts.components.parallax-row', ['imageSrc' => '/img/banners/banner_01.jpg'])
-        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-    @endcomponent
-
-    @component('layouts.components.text-row', ['title' => 'A Bit About Me'])
+        <h4>A Bit About Me</h4>
         <p class="left-align light">Not only do I work full time as a PHP developer for an executive recruitment company, but in my spare time, I develop my skills further with both personal, and freelance projects. </p>
         <p class="left-align light">In my full time employment, I work on the internal PHP based system, where I take a pro-active role in creating new features, regular code refactoring, fixing bugs, and tuning algorithms to ensure, and improve, high performance at all times. It is of the utmost importance that the PHP based system, is constantly developed to keep in sync with ever changing new technologies, not only for obvious security reasons, but also to maintain state of the art services, which attracts high paying cliental. </p>
         <p class="left-align light">From a mere idea, to a fully functioning product, as a full stack developer my skills enable me to take the ideas from the drawing board, and progress them into a finished, high-spec product.   </p>
@@ -69,12 +62,66 @@
         <p class="left-align light">I am a self-taught developer with an unstoppable drive, nothing will hold me back, and I continuously strive to push my boundaries, in order to excel myself in both my domain and my personal abilities.</p>
     @endcomponent
 
-    @component('layouts.components.parallax-row', ['imageSrc' => '/img/banners/banner_01.jpg'])
-        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-    @endcomponent
-
     @component('layouts.components.text-row', ['title' => 'Portfolio & Case Studies'])
-        <p class="left-align light">Lorem ipsum...</p>
+        <div class="row">
+            <div class="col s12">
+                <div class="card horizontal">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img src="/img/portfolio/letting-management-system/screenshot_01.png">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <h5>Letting Management System</h5>
+                            <p>When Big Blue Lettings came to me, they only wanted a simple application which helped them log payments they received. This quickly turned into an entire system which is used to operate a majority of their business.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Case Study</a>
+                            <a href="#">Gallery</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12">
+                <div class="card horizontal">
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <h5>Microsite Management System</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid blanditiis cupiditate dolor maxime ratione sapiente, veniam voluptatibus? Ab deleniti dicta magnam maiores maxime odio praesentium reiciendis suscipit velit voluptatem!</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Case Study</a>
+                            <a href="#">Gallery</a>
+                        </div>
+                    </div>
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img src="/img/portfolio/microsite-management-system/screenshot_01.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12">
+                <div class="card horizontal">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img src="/img/portfolio/stock-check/screenshot_01.png">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <h5>Stock Check</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, cumque cupiditate dolorem doloribus, est illo impedit incidunt laudantium minima minus numquam perferendis porro quia quidem, quod reprehenderit similique temporibus unde.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Case Study</a>
+                            <a href="#">Gallery</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     @endcomponent
 
     @component('layouts.components.parallax-row', ['imageSrc' => '/img/banners/banner_02.jpg'])
