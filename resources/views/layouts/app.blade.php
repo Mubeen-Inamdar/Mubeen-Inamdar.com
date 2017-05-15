@@ -11,7 +11,7 @@
         @include('layouts.partials.favicons')
 
         {{-- Fonts --}}
-        <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
 
         {{-- Stylesheets --}}
         <link rel="stylesheet" href="/css/app.css">
