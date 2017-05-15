@@ -5,6 +5,7 @@
         $('.parallax').parallax();
         $('.tooltipped').tooltip();
         $('.modal').modal();
+        $('.slider').slider();
 
     });
 })(jQuery);

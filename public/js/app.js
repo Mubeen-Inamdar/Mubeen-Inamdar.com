@@ -1706,6 +1706,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
         $('.parallax').parallax();
         $('.tooltipped').tooltip();
         $('.modal').modal();
+        $('.slider').slider();
     });
 })(jQuery);
 

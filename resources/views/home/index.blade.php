@@ -54,7 +54,7 @@
     @component('layouts.components.text-row', ['title' => 'A Bit About Me'])
         <p class="left-align light">Not only do I work full time as a PHP developer for an executive recruitment company, but in my spare time, I develop my skills further with both personal, and freelance projects. </p>
         <p class="left-align light">In my full time employment, I work on the internal PHP based system, where I take a pro-active role in creating new features, regular code refactoring, fixing bugs, and tuning algorithms to ensure, and improve, high performance at all times. It is of the utmost importance that the PHP based system, is constantly developed to keep in sync with ever changing new technologies, not only for obvious security reasons, but also to maintain state of the art services, which attracts high paying cliental. </p>
-        <button class="btn deep-orange read-more-button">Read More</button>
+        <button class="btn deep-orange read-more-button"><i class="material-icons right">expand_more</i>Read More</button>
         <div class="read-more-content">
             <p class="left-align light">From a mere idea, to a fully functioning product, as a full stack developer my skills enable me to take the ideas from the drawing board, and progress them into a finished, high-spec product.   </p>
             <p class="left-align light">I pride myself with always writing clean and expressive code, I do this by following concepts such as: OOP, The Gang of Four design patterns and MVC. Most of my work is done in the Laravel framework, however, I also write non-framework based code.</p>
@@ -75,7 +75,9 @@
             <div class="col s12">
                 <div class="card horizontal">
                     <div class="card-image waves-effect waves-block waves-light">
-                        <img src="/img/portfolio/letting-management-system/screenshot_01.png">
+                        <a href="#letting-management-system-gallery-modal">
+                            <img src="/img/portfolio/letting-management-system/screenshot_01.png">
+                        </a>
                     </div>
                     <div class="card-stacked">
                         <div class="card-content">
@@ -83,8 +85,8 @@
                             <p>When Big Blue Lettings came to me, they only wanted a simple application which helped them log payments they received. This quickly turned into an entire system which is used to operate a majority of their business.</p>
                         </div>
                         <div class="card-action">
-                            <a href="#letting-management-system-case-study-modal">Case Study</a>
-                            <a href="#">Gallery</a>
+                            <a class="btn waves-effect waves-light" href="#letting-management-system-case-study-modal"><i class="material-icons right">folder</i>Case Study</a>
+                            <a class="btn waves-effect waves-light blue-grey" href="#letting-management-system-gallery-modal"><i class="material-icons right">photo_camera</i>Gallery</a>
                         </div>
                     </div>
                 </div>
@@ -100,12 +102,15 @@
                             <p>I took it upon myself to design a system which would easily help me keep track of my current workload which has the ultimate goal of increasing my efficiency.</p>
                         </div>
                         <div class="card-action">
-                            <a href="#microsite-management-system-case-study-modal">Case Study</a>
-                            <a href="#">Gallery</a>
+
+                            <a class="btn waves-effect waves-light" href="#microsite-management-system-case-study-modal"><i class="material-icons right">folder</i>Case Study</a>
+                            <a class="btn waves-effect waves-light blue-grey" href="#microsite-management-system-gallery-modal"><i class="material-icons right">photo_camera</i>Gallery</a>
                         </div>
                     </div>
                     <div class="card-image waves-effect waves-block waves-light">
-                        <img src="/img/portfolio/microsite-management-system/screenshot_01.png">
+                        <a href="#microsite-management-system-gallery-modal">
+                            <img src="/img/portfolio/microsite-management-system/screenshot_01.png">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -115,7 +120,9 @@
             <div class="col s12">
                 <div class="card horizontal">
                     <div class="card-image waves-effect waves-block waves-light">
-                        <img src="/img/portfolio/stock-check/screenshot_01.png">
+                        <a href="#stock-check-gallery-modal">
+                            <img src="/img/portfolio/stock-check/screenshot_01.png">
+                        </a>
                     </div>
                     <div class="card-stacked">
                         <div class="card-content">
@@ -123,8 +130,8 @@
                             <p>This was a fun little side project which allowed to experiment with new technologies and ideas. I came up with the idea of a web app which would check the stock of an item at regular intervals and send a notification to the user once it was back in stock.</p>
                         </div>
                         <div class="card-action">
-                            <a href="#stock-check-case-study-modal">Case Study</a>
-                            <a href="#">Gallery</a>
+                            <a class="btn waves-effect waves-light" href="#stock-check-case-study-modal"><i class="material-icons right">folder</i>Case Study</a>
+                            <a class="btn waves-effect waves-light blue-grey" href="#stock-check-gallery-modal"><i class="material-icons right">photo_camera</i>Gallery</a>
                         </div>
                     </div>
                 </div>
@@ -182,6 +189,12 @@
         @endslot
     @endcomponent
 
+    @component('layouts.components.gallery-modal', ['id' => 'letting-management-system-gallery-modal'])
+        <li><img src="/img/portfolio/letting-management-system/screenshot_01.png"></li>
+        <li><img src="/img/portfolio/letting-management-system/screenshot_02.png"></li>
+        <li><img src="/img/portfolio/letting-management-system/screenshot_03.png"></li>
+    @endcomponent
+
     @component('layouts.components.case-study-modal', ['id' => 'microsite-management-system-case-study-modal'])
         @slot('title')
             Microsite Management System
@@ -217,6 +230,12 @@
         @endslot
     @endcomponent
 
+    @component('layouts.components.gallery-modal', ['id' => 'microsite-management-system-gallery-modal'])
+        <li><img src="/img/portfolio/microsite-management-system/screenshot_01.png"></li>
+        <li><img src="/img/portfolio/microsite-management-system/screenshot_02.png"></li>
+        <li><img src="/img/portfolio/microsite-management-system/screenshot_03.png"></li>
+    @endcomponent
+
     @component('layouts.components.case-study-modal', ['id' => 'stock-check-case-study-modal'])
         @slot('title')
             Stock Check
@@ -241,5 +260,11 @@
         @slot('theOutcome')
             <p>The application fully works and is still used to this day. It allowed me to experiment with new technologies which I now feel comfortable using in the future.</p>
         @endslot
+    @endcomponent
+
+    @component('layouts.components.gallery-modal', ['id' => 'stock-check-gallery-modal'])
+        <li><img src="/img/portfolio/stock-check/screenshot_01.png"></li>
+        <li><img src="/img/portfolio/stock-check/screenshot_02.png"></li>
+        <li><img src="/img/portfolio/stock-check/screenshot_03.png"></li>
     @endcomponent
 @endsection

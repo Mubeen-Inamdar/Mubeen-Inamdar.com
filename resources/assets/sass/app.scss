@@ -138,3 +138,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 40px;
   border-bottom: 1px dotted $primary-color;
 }
+
+.slider > .indicators > .indicator-item.active {
+  background-color: $secondary-color;
+}
