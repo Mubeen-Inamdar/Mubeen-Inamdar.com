@@ -16,6 +16,7 @@ window.Vue = require('vue');
  */
 
 Vue.component('scroll-to-top', require('./components/ScrollToTop.vue'));
+Vue.component('contact-form', require('./components/ContactForm.vue'));
 
 const app = new Vue({
     el: '#app',

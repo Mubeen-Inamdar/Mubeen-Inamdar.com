@@ -2,33 +2,7 @@
     <div class="container">
         <div class="row">
 
-            <div class="col l6 s12">
-                <h5 class="white-text">Get In Touch</h5>
-                <div class="row">
-                    <div class="input-field col s6">
-                        <i class="material-icons white-text prefix">account_circle</i>
-                        <input id="name" type="text" class="white-text validate">
-                        <label for="name">Name</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <i class="material-icons white-text prefix">email</i>
-                        <input id="email" type="email" class="white-text validate">
-                        <label for="email">Email</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="material-icons white-text prefix">message</i>
-                        <textarea id="message" class="materialize-textarea white-text validate"></textarea>
-                        <label for="message">Message</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <a class="waves-effect waves-light btn">
-                        <i class="material-icons right">send</i>Send
-                    </a>
-                </div>
-            </div>
+            <contact-form></contact-form>
 
             <div class="col l3 s12">
                 <h5><a class="white-text" href="{{ config('url.blog') }}">Blog</a></h5>
@@ -40,6 +14,7 @@
                     @endforeach
                 </ul>
             </div>
+
             <div class="col l3 s12">
                 <h5 class="white-text">Find Me Elsewhere</h5>
                 <a class="btn-floating btn-large waves-effect waves-light tooltipped icon-github" href="{{ config('url.github') }}" target="_blank" data-position="bottom" data-tooltip="GitHub"><i class="fa fa-github left" aria-hidden="true"></i></a>
