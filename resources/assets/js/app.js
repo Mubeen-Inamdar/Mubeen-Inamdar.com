@@ -15,8 +15,23 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example', require('./components/Example.vue'));
+Vue.component('scroll-to-top', require('./components/ScrollToTop.vue'));
+Vue.component('contact-form', require('./components/ContactForm.vue'));
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+
+    mounted() {
+        $('.read-more-button').on('click', function () {
+            $(this).slideUp('slow', function () {
+                $('.read-more-content').slideDown('slow');
+            });
+        });
+    }
 });
+
+/**
+ * Initialise any scripts.
+ */
+
+require('./init');

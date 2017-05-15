@@ -3,27 +3,41 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>@yield('title') | Mubeen-Inamdar.com</title>
-        <meta name="description" content="Portfolio and information about Mubeen Inamdar.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ config('app.name') }}</title>
+        <meta name="description" content="Portfolio and information about Mubeen Inamdar, web development in Leeds.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         {{-- Favicons --}}
+        @include('layouts.partials.favicons')
+
+        {{-- Fonts --}}
+        <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
 
         {{-- Stylesheets --}}
         <link rel="stylesheet" href="/css/app.css">
+
+        {{-- CSRF Token --}}
+        @include('layouts.partials.csrf-token')
     </head>
     <body>
-        <!--[if lte IE 9]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
+        {{-- Update Browser Message --}}
+        @include('layouts.partials.update-browser')
 
         {{-- Content --}}
-        @yield('content')
+        <div id="app">
+            @include('layouts.partials.nav')
+            @yield('content')
+            @include('layouts.partials.footer')
 
-        {{-- Scripts --}}
-        <script src="/js/app.js"></script>
+            {{-- Scroll to Top --}}
+            <scroll-to-top></scroll-to-top>
+        </div>
 
         {{-- Google Analytics --}}
         @include('layouts.partials.analytics')
+
+        {{-- Scripts --}}
+        <script src="/js/app.js"></script>
+        <script src="/js/materialize.js"></script>
     </body>
 </html>

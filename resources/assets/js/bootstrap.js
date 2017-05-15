@@ -2,7 +2,10 @@
 window.$ = window.jQuery = require('jquery');
 
 // MaterializeCSS
-require('materialize-css');
+//require('materialize-css');
+
+// SweetAlert2
+window.swal = require('sweetalert2');
 
 // Axios
 window.axios = require('axios');

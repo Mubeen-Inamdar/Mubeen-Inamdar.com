@@ -23,6 +23,14 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        // GuzzleHttp.
+        $this->app->singleton(\GuzzleHttp\Client::class, function ($app) {
+            return new \GuzzleHttp\Client;
+        });
+
+        // Blog.
+        $this->app->singleton(\App\Contracts\Blog\Repository::class, function ($app) {
+            return new \App\Support\Blog\WordPress;
+        });
     }
 }

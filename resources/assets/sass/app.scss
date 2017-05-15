@@ -1,8 +1,147 @@
 // Fonts
 // @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+@import "node_modules/font-awesome/scss/font-awesome";
 
 // Variables
+@import "colors";
 @import "variables";
 
 // MaterializeCSS
 @import "node_modules/materialize-css/sass/materialize";
+
+// SweetAlert2
+@import "node_modules/sweetalert2/dist/sweetalert2";
+
+// Refactors
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: color("shades", "white");
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255, 255, 255, .9);
+}
+
+.parallax-container .section {
+  width: 100%;
+}
+
+.parallax > img {
+  filter: brightness(.3);
+}
+
+@media only screen and (max-width: 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+.page-footer {
+  margin: 0;
+
+  .icon-twitter,
+  .icon-github,
+  .icon-stack-overflow,
+  .icon-wordpress {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .icon-twitter {
+    background-color: $twitter;
+  }
+
+  .icon-github {
+    background-color: $github;
+  }
+
+  .icon-stack-overflow {
+    background-color: $stack-overflow;
+  }
+
+  .icon-wordpress {
+    background-color: $wordpress;
+  }
+}
+
+.justify-align {
+  text-align: justify;
+}
+
+.blog-post {
+  transition: .3s ease-out;
+  margin-bottom: 10px;
+  border-bottom: 1px dotted color("shades", "white");
+
+  &:hover {
+    border-color: color("deep-orange", "base");
+
+    > a {
+      color: color("deep-orange", "lighten-2");
+    }
+  }
+
+  > a {
+    transition: .3s ease-out;
+    color: color("shades", "white");
+  }
+}
+
+#index-banner > .section {
+  margin-top: 70px;
+}
+
+.read-more-content {
+  display: none;
+}
+
+.card.horizontal .card-image {
+  align-items: center;
+  display: flex;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 200;
+}
+
+.modal-content > h3 {
+  margin-bottom: 50px;
+}
+
+.modal-content > h4 {
+  margin-top: 40px;
+  border-bottom: 1px dotted $primary-color;
+}
+
+.slider > .indicators > .indicator-item.active {
+  background-color: $secondary-color;
+}
