@@ -3,7 +3,8 @@
 
         $('.button-collapse').sideNav();
         $('.parallax').parallax();
-        $('.carousel-slider').carousel({fullWidth: true, indicators: true});
+        $('.tooltipped').tooltip();
+        $('.modal').modal();
 
     });
 })(jQuery);

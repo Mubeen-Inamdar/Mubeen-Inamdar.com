@@ -761,7 +761,15 @@ window.Vue = __webpack_require__(40);
 Vue.component('scroll-to-top', __webpack_require__(34));
 
 var app = new Vue({
-  el: '#app'
+    el: '#app',
+
+    mounted: function mounted() {
+        $('.read-more-button').on('click', function () {
+            $(this).slideUp('slow', function () {
+                $('.read-more-content').slideDown('slow');
+            });
+        });
+    }
 });
 
 /**
@@ -1696,7 +1704,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
         $('.button-collapse').sideNav();
         $('.parallax').parallax();
-        $('.carousel-slider').carousel({ fullWidth: true, indicators: true });
+        $('.tooltipped').tooltip();
+        $('.modal').modal();
     });
 })(jQuery);
 

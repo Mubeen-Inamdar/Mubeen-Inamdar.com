@@ -3,7 +3,7 @@
 
         <div class="row">
             <div class="col s12 center">
-                <h4>{{ $title }}</h4>
+                <h3>{{ $title }}</h3>
                 {!! $slot !!}
             </div>
         </div>

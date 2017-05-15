@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>@yield('title') | {{ config('app.name') }}</title>
-        <meta name="description" content="Portfolio and information about Mubeen Inamdar.">
+        <title>{{ config('app.name') }}</title>
+        <meta name="description" content="Portfolio and information about Mubeen Inamdar, web development in Leeds.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         {{-- Favicons --}}

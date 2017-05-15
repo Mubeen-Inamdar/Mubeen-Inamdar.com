@@ -18,7 +18,15 @@ window.Vue = require('vue');
 Vue.component('scroll-to-top', require('./components/ScrollToTop.vue'));
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+
+    mounted() {
+        $('.read-more-button').on('click', function () {
+            $(this).slideUp('slow', function () {
+                $('.read-more-content').slideDown('slow');
+            });
+        });
+    }
 });
 
 /**

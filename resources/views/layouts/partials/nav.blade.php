@@ -13,6 +13,6 @@
 </div>
 
 <ul id="nav-mobile" class="side-nav blue-grey">
-    <li><a href="{{ url('storage/Mubeen%20Inamdar%20-%20CV%20July%202016.pdf') }}" class="white-text"><i class="fa fa-file-text white-text" aria-hidden="true"></i>Download My CV</a></li>
-    <li><a href="{{ config('url.blog') }}"  class="white-text"><i class="fa fa-comments white-text" aria-hidden="true"></i>Blog</a></li>
+    <li><a href="{{ url('storage/Mubeen%20Inamdar%20-%20CV%20July%202016.pdf') }}" class="white-text"><i class="material-icons white-text">description</i>Download My CV</a></li>
+    <li><a href="{{ config('url.blog') }}"  class="white-text"><i class="material-icons white-text">comment</i>Blog</a></li>
 </ul>
