@@ -73,68 +73,41 @@
     @component('layouts.components.text-row', ['title' => 'Portfolio & Case Studies'])
         <div class="row">
             <div class="col s12">
-                <div class="card horizontal">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <a href="#letting-management-system-gallery-modal">
-                            <img src="/img/portfolio/letting-management-system/screenshot_01.png">
-                        </a>
-                    </div>
-                    <div class="card-stacked">
-                        <div class="card-content">
-                            <h4>Letting Management System</h4>
-                            <p>When Big Blue Lettings came to me, they only wanted a simple application which helped them log payments they received. This quickly turned into an entire system which is used to operate a majority of their business.</p>
-                        </div>
-                        <div class="card-action">
-                            <a class="btn waves-effect waves-light" href="#letting-management-system-case-study-modal"><i class="material-icons right">folder</i>Case Study</a>
-                            <a class="btn waves-effect waves-light blue-grey" href="#letting-management-system-gallery-modal"><i class="material-icons right">photo_camera</i>Gallery</a>
-                        </div>
-                    </div>
-                </div>
+                @component('layouts.components.card', [
+                    'title'       => 'Letting Management System',
+                    'galleryId'   => '#letting-management-system-gallery-modal',
+                    'caseStudyId' => '#letting-management-system-case-study-modal',
+                    'imageSrc'    => '/img/portfolio/letting-management-system/screenshot_01.png'
+                ])
+                    <p>When Big Blue Lettings came to me, they only wanted a simple application which helped them log payments they received. This quickly turned into an entire system which is used to operate a majority of their business.</p>
+                @endcomponent
             </div>
         </div>
 
         <div class="row">
             <div class="col s12">
-                <div class="card horizontal">
-                    <div class="card-stacked">
-                        <div class="card-content">
-                            <h4>Microsite Management System</h4>
-                            <p>I took it upon myself to design a system which would easily help me keep track of my current workload which has the ultimate goal of increasing my efficiency.</p>
-                        </div>
-                        <div class="card-action">
-
-                            <a class="btn waves-effect waves-light" href="#microsite-management-system-case-study-modal"><i class="material-icons right">folder</i>Case Study</a>
-                            <a class="btn waves-effect waves-light blue-grey" href="#microsite-management-system-gallery-modal"><i class="material-icons right">photo_camera</i>Gallery</a>
-                        </div>
-                    </div>
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <a href="#microsite-management-system-gallery-modal">
-                            <img src="/img/portfolio/microsite-management-system/screenshot_01.png">
-                        </a>
-                    </div>
-                </div>
+                @component('layouts.components.card', [
+                    'title'       => 'Microsite Management System',
+                    'galleryId'   => '#microsite-management-system-gallery-modal',
+                    'caseStudyId' => '#microsite-management-system-case-study-modal',
+                    'imageSrc'    => '/img/portfolio/microsite-management-system/screenshot_01.png',
+                    'alternate'   => true
+                ])
+                    <p>I took it upon myself to design a system which would easily help me keep track of my current workload which has the ultimate goal of increasing my efficiency.</p>
+                @endcomponent
             </div>
         </div>
 
         <div class="row">
             <div class="col s12">
-                <div class="card horizontal">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <a href="#stock-check-gallery-modal">
-                            <img src="/img/portfolio/stock-check/screenshot_01.png">
-                        </a>
-                    </div>
-                    <div class="card-stacked">
-                        <div class="card-content">
-                            <h4>Stock Check</h4>
-                            <p>This was a fun little side project which allowed to experiment with new technologies and ideas. I came up with the idea of a web app which would check the stock of an item at regular intervals and send a notification to the user once it was back in stock.</p>
-                        </div>
-                        <div class="card-action">
-                            <a class="btn waves-effect waves-light" href="#stock-check-case-study-modal"><i class="material-icons right">folder</i>Case Study</a>
-                            <a class="btn waves-effect waves-light blue-grey" href="#stock-check-gallery-modal"><i class="material-icons right">photo_camera</i>Gallery</a>
-                        </div>
-                    </div>
-                </div>
+                @component('layouts.components.card', [
+                    'title'       => 'Stock Check',
+                    'galleryId'   => '#stock-check-gallery-modal',
+                    'caseStudyId' => '#stock-check-case-study-modal',
+                    'imageSrc'    => '/img/portfolio/stock-check/screenshot_01.png'
+                ])
+                    <p>This was a fun little side project which allowed to experiment with new technologies and ideas. I came up with the idea of a web app which would check the stock of an item at regular intervals and send a notification to the user once it was back in stock.</p>
+                @endcomponent
             </div>
         </div>
     @endcomponent
