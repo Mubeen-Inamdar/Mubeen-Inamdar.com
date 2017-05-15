@@ -2032,7 +2032,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 email: this.email,
                 message: this.message
             }).catch(function (error) {
-                return swal('Error', error, 'error');
+                return swal('Error', 'Sorry, an error occurred.', 'error');
             }).then(function (response) {
                 swal('Thanks!', "Thanks for getting in touch. I'll try my best to get back to you within the next day or so.", 'info');
 
@@ -14357,8 +14357,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "technically-hidden",
     attrs: {
       "type": "text",
-      "name": "no_bots_please",
-      "disabled": _vm.disableForm
+      "name": "no_bots_please"
     },
     domProps: {
       "value": (_vm.noBotsPlease)

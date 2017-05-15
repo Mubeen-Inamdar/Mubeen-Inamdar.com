@@ -2,7 +2,7 @@
     <div class="col l6 s12">
         <h5 class="white-text">Get In Touch</h5>
         <form v-on:submit.prevent="onSubmit">
-            <input v-model="noBotsPlease" class="technically-hidden" type="text" name="no_bots_please" :disabled="disableForm">
+            <input v-model="noBotsPlease" class="technically-hidden" type="text" name="no_bots_please">
 
             <div class="row">
                 <div class="input-field col s6">
@@ -63,7 +63,7 @@
                 })
                 .catch(error => swal(
                     'Error',
-                    error,
+                    'Sorry, an error occurred.',
                     'error'
                 ))
                 .then(response => {
