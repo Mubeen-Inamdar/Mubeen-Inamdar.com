@@ -7,7 +7,7 @@
 
                 <div class="row center">
                     <h1 class="header deep-orange-text">Mubeen Inamdar</h1>
-                    <h5 class="header col s12 light">Web development in Leeds.</h5>
+                    <h5 class="header col s12 light">Bespoke Web Apps</h5>
                 </div>
 
             </div>
