@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>{{ config('app.name') }}</title>
-        <meta name="description" content="Portfolio and information about Mubeen Inamdar, web development in Leeds.">
+        <meta name="description" content="Bespoke web applications from Leeds.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         {{-- Favicons --}}
