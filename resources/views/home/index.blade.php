@@ -87,20 +87,6 @@
         <div class="row">
             <div class="col s12">
                 @component('layouts.components.card', [
-                    'title'       => 'Microsite Management System',
-                    'galleryId'   => '#microsite-management-system-gallery-modal',
-                    'caseStudyId' => '#microsite-management-system-case-study-modal',
-                    'imageSrc'    => '/img/portfolio/microsite-management-system/screenshot_01.png',
-                    'alternate'   => true
-                ])
-                    <p>I took it upon myself to design a system which would easily help me keep track of my current workload which has the ultimate goal of increasing my efficiency.</p>
-                @endcomponent
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col s12">
-                @component('layouts.components.card', [
                     'title'       => 'Stock Check',
                     'galleryId'   => '#stock-check-gallery-modal',
                     'caseStudyId' => '#stock-check-case-study-modal',
@@ -166,47 +152,6 @@
         <li><img src="/img/portfolio/letting-management-system/screenshot_01.png"></li>
         <li><img src="/img/portfolio/letting-management-system/screenshot_02.png"></li>
         <li><img src="/img/portfolio/letting-management-system/screenshot_03.png"></li>
-    @endcomponent
-
-    @component('layouts.components.case-study-modal', ['id' => 'microsite-management-system-case-study-modal'])
-        @slot('title')
-            Microsite Management System
-        @endslot
-
-        @slot('theProblem')
-            <p>At my current role, as a full time developer for an executive recruitment agency, I have the task of developing several websites for clients at any time.</p>
-            <p>This can become easy to lose track of what progress has been made on a particular website when switching back and forth. I often found myself spending a few minutes looking through email conversations to get myself back on track with the current progress.</p>
-            <p>I took it upon myself to design a system which would easily help me keep track of my current workload which has the ultimate goal of increasing my efficiency.</p>
-        @endslot
-
-        @slot('theDesignAndImplementation')
-            <p>To start with, I looked at our current workflow which was maintaining a Google Sheets document with up to date information. The main problems with this was:</p>
-            <ul class="browser-default">
-                <li>Keeping notes on each project</li>
-                <li>Quickly searching for projects</li>
-            </ul>
-            <p>I then prototyped a database schema on the computer using MySQL Workbench, this helped me visualise the system and work out what relationship needed to be in place.</p>
-            <p>Once complete, I started working on the web application itself. The process didn’t take too long as the functionality was fairly simple:</p>
-            <ul>
-                <li>Have a list of notes for each project</li>
-                <li>Be able to add notes for a project</li>
-                <li>Have a interactive checklist for required processes that need to be followed</li>
-                <li>Ability to search for a project by sorting and filtering</li>
-            </ul>
-            <p>For the ability of adding notes, rather than having a simple HTML textarea, I opted to go for a fully fledged WYSIWYG editor. The one I ended up using was TinyMCE, an open source project with a massive community backing.</p>
-            <p>In terms of searching for projects, I simply displayed the project in a HTML table on the table and then added search functionality with DataTables, a JavaScript library which had all the functionality I needed straight out of the box.</p>
-        @endslot
-
-        @slot('theOutcome')
-            <p>I’ve been using this system for several months now and it has certainly increased my efficiency by a significant amount. It also helps my time management as each note I leave has a timestamp which encourages me to work even faster and harder.</p>
-            <p>I showed my employers the system and they where impressed, we have had discussions about officially incorporating it into the internal systems.</p>
-        @endslot
-    @endcomponent
-
-    @component('layouts.components.gallery-modal', ['id' => 'microsite-management-system-gallery-modal'])
-        <li><img src="/img/portfolio/microsite-management-system/screenshot_01.png"></li>
-        <li><img src="/img/portfolio/microsite-management-system/screenshot_02.png"></li>
-        <li><img src="/img/portfolio/microsite-management-system/screenshot_03.png"></li>
     @endcomponent
 
     @component('layouts.components.case-study-modal', ['id' => 'stock-check-case-study-modal'])
